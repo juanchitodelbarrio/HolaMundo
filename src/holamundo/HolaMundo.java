@@ -2,11 +2,12 @@ package holamundo;
 
 public class HolaMundo {
 	public static void main(String[] args) {
-		System.out.print("HOLA MUNDO DESDE GIT");
-		System.out.print("PRUEBA RAMA MASTER");
-		System.out.print("PRUEBAS CON RAMAS");
+		System.out.println("HOLA MUNDO DESDE GIT");
+		System.out.println("PRUEBA RAMA MASTER");
+		System.out.println("PRUEBAS CON RAMAS");
 		
 		PruebaGit pruebaGit=new PruebaGit();
+		pruebaGit.setCampoDeClase1("SE CAMBIA VALOR DE CAMPO DE CLASE");
 		System.out.println(pruebaGit.getCampoDeClase1());
 	}
 }
@@ -14,7 +15,8 @@ public class HolaMundo {
 class PruebaGit{
 	public PruebaGit() {
 		// TODO Auto-generated constructor stub
-		campoDeClase1="ESTE ES UN CAMPO DE CLASE";
+		campoDeClase1="ESTE ES UN CAMPO DE CLASE 1";
+		campoDeClase2="ESTE ES UN CAMPO DE CLASE 2";
 	}
 	
 	public String getCampoDeClase1() {
@@ -24,6 +26,9 @@ class PruebaGit{
 	public void setCampoDeClase1(String campoDeClase1) {
 		this.campoDeClase1 = campoDeClase1;
 	}
+	
 
 	private String campoDeClase1;
+	private String campoDeClase2;
+	
 }
