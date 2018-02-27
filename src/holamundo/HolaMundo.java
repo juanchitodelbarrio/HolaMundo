@@ -26,9 +26,11 @@ class PruebaGit{
 	public void setCampoDeClase1(String campoDeClase1) {
 		this.campoDeClase1 = campoDeClase1;
 	}
-	
-
 	private String campoDeClase1;
 	private String campoDeClase2;
+	
+}
+
+class ClaseTesteo{
 	
 }
