@@ -1,0 +1,28 @@
+data = split("2 3
+YHQL YLGL YLFL.
+HYHQ BRX EUXWXV.", "\n")
+
+iterator, K = int(split(data[1], " "))
+result = ""
+for i in 2:iterator+1
+    
+    words = split(data[i], " ")
+
+    for w in words
+        w = split(w, ".")[1]    
+        for c in w
+
+            new_char = int(c) - K
+            
+            if new_char < int('A')
+                new_char += 26
+            end
+
+            result = string(result, char(new_char))
+        end
+        result = string(result, " ")
+    end
+    result = string(result, "\b. ")
+end
+println(result)
+
